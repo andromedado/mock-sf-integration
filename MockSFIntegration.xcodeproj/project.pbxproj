@@ -12,9 +12,11 @@
 		735C48301E6F202D00A7C404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735C482E1E6F202D00A7C404 /* Main.storyboard */; };
 		735C48321E6F202D00A7C404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735C48311E6F202D00A7C404 /* Assets.xcassets */; };
 		735C48351E6F202D00A7C404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735C48331E6F202D00A7C404 /* LaunchScreen.storyboard */; };
+		8E0072A2A98E62627EBC535A /* libPods-MockSFIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784CFD513B0EFD6B4602F09D /* libPods-MockSFIntegration.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2888BAF73FF9EBF95E9A92CB /* Pods-MockSFIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockSFIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-MockSFIntegration/Pods-MockSFIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		735C48271E6F202D00A7C404 /* MockSFIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockSFIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735C482A1E6F202D00A7C404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		735C482C1E6F202D00A7C404 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		735C48311E6F202D00A7C404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		735C48341E6F202D00A7C404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		735C48361E6F202D00A7C404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784CFD513B0EFD6B4602F09D /* libPods-MockSFIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MockSFIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86818C34F7658F1B294EB04C /* Pods-MockSFIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockSFIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MockSFIntegration/Pods-MockSFIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0072A2A98E62627EBC535A /* libPods-MockSFIntegration.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B545D3C42808A99F052949 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86818C34F7658F1B294EB04C /* Pods-MockSFIntegration.debug.xcconfig */,
+				2888BAF73FF9EBF95E9A92CB /* Pods-MockSFIntegration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		577210002EFE3F4A8EAEF2BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784CFD513B0EFD6B4602F09D /* libPods-MockSFIntegration.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		735C481E1E6F202D00A7C404 = {
 			isa = PBXGroup;
 			children = (
 				735C48291E6F202D00A7C404 /* MockSFIntegration */,
 				735C48281E6F202D00A7C404 /* Products */,
+				37B545D3C42808A99F052949 /* Pods */,
+				577210002EFE3F4A8EAEF2BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 735C48391E6F202D00A7C404 /* Build configuration list for PBXNativeTarget "MockSFIntegration" */;
 			buildPhases = (
+				694DE84F9C667A4CA8ABB41C /* [CP] Check Pods Manifest.lock */,
 				735C48231E6F202D00A7C404 /* Sources */,
 				735C48241E6F202D00A7C404 /* Frameworks */,
 				735C48251E6F202D00A7C404 /* Resources */,
+				9AA5AF37CEC000187544DF4D /* [CP] Embed Pods Frameworks */,
+				6E8D80C5CA8C09D5196137A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		694DE84F9C667A4CA8ABB41C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8D80C5CA8C09D5196137A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MockSFIntegration/Pods-MockSFIntegration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA5AF37CEC000187544DF4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MockSFIntegration/Pods-MockSFIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		735C48231E6F202D00A7C404 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,6 +263,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -237,6 +313,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -257,6 +334,7 @@
 		};
 		735C483A1E6F202D00A7C404 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86818C34F7658F1B294EB04C /* Pods-MockSFIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KTWP79UZ95;
@@ -270,6 +348,7 @@
 		};
 		735C483B1E6F202D00A7C404 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2888BAF73FF9EBF95E9A92CB /* Pods-MockSFIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KTWP79UZ95;
@@ -300,6 +379,7 @@
 				735C483B1E6F202D00A7C404 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

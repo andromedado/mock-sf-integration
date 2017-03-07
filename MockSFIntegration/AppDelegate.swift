@@ -8,6 +8,9 @@
 
 import UIKit
 
+import ServiceCore
+import ServiceKnowledge
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let config = SCSServiceConfiguration(
+            community: URL(string: "https://support.1stdibs.com")!,
+            dataCategoryGroup: "Public",
+            rootDataCategory: "All")
+
+        // Perform any additional configuration here
+        //
+
+        // Pass configuration to shared instance
+        SCServiceCloud.sharedInstance().serviceConfiguration = config
+
         return true
     }
 
