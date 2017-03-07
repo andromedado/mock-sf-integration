@@ -30,6 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Pass configuration to shared instance
         SCServiceCloud.sharedInstance().serviceConfiguration = config
 
+        SCSKnowledgeManager.default().fetchAllCategories(completionHandler: nil)
+
+        SFLogger.shared().setLogLevel(SFLogLevel.verbose, forIdentifiersWithPrefix: "com.salesforce.ServiceSDK")
+
         return true
     }
 

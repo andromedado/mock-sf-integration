@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,8 +23,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEQ-IO-K2l">
-                                <rect key="frame" x="105" y="222" width="167" height="108"/>
+                                <rect key="frame" x="104" y="279.5" width="167" height="108"/>
                                 <color key="backgroundColor" red="0.98960357899999996" green="0.054250709709999997" blue="0.135620147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="UvF-R8-10i"/>
+                                    <constraint firstAttribute="width" secondItem="DEQ-IO-K2l" secondAttribute="height" multiplier="167:108" id="rPK-Sh-iEz"/>
+                                </constraints>
                                 <state key="normal" title="Launch Support Center">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,10 +39,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DEQ-IO-K2l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="202" id="52r-Xj-npL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DEQ-IO-K2l" secondAttribute="trailing" constant="87" id="Seu-ZU-cie"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DEQ-IO-K2l" secondAttribute="bottom" constant="337" id="la5-mz-FVB"/>
-                            <constraint firstItem="DEQ-IO-K2l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="phQ-Te-JMs"/>
+                            <constraint firstItem="DEQ-IO-K2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JT1-Ei-YbW"/>
+                            <constraint firstItem="DEQ-IO-K2l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u6J-js-UQC"/>
                         </constraints>
                     </view>
                 </viewController>
