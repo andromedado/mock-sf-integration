@@ -101,6 +101,7 @@
 				735C48251E6F202D00A7C404 /* Resources */,
 				9AA5AF37CEC000187544DF4D /* [CP] Embed Pods Frameworks */,
 				6E8D80C5CA8C09D5196137A3 /* [CP] Copy Pods Resources */,
+				735C483D1E6F6A2700A7C404 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -189,6 +190,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MockSFIntegration/Pods-MockSFIntegration-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		735C483D1E6F6A2700A7C404 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/ServiceSDK/Frameworks/SalesforceKit.framework/prepare-framework\"";
 		};
 		9AA5AF37CEC000187544DF4D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -339,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KTWP79UZ95;
 				INFOPLIST_FILE = MockSFIntegration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1stdibs.utils.MockSFIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KTWP79UZ95;
 				INFOPLIST_FILE = MockSFIntegration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1stdibs.utils.MockSFIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
